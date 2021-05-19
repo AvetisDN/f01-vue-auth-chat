@@ -10,6 +10,7 @@ import firebase from "firebase";
 const firebaseConfig = {
     apiKey: "AIzaSyCeivYz9gPkULfBKghTczFeYxepsPqGUdM",
     authDomain: "vue-app-f01.firebaseapp.com",
+    databaseURL: "https://vue-app-f01-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "vue-app-f01",
     storageBucket: "vue-app-f01.appspot.com",
     messagingSenderId: "567868302071",

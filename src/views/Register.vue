@@ -72,6 +72,15 @@ export default {
       msgError: ''
     }
   },
+  created() {
+    firebase
+        .auth()
+        .onAuthStateChanged((user) => {
+          if (user) {
+            this.$router.push('/account')
+          }
+        })
+  },
   methods: {
     hideError() {
       this.isError = false

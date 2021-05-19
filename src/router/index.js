@@ -20,7 +20,12 @@ const routes = [
   {
     path: '/account',
     name: 'account',
-    component: () => import('../views/Account.vue')
+    component: () => import('../views/Account.vue'),
+  },
+  {
+    path: '/chat',
+    name: 'chat',
+    component: () => import('../views/Chat.vue'),
   }
 ]
 
@@ -28,5 +33,6 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
 
 export default router
